@@ -5,7 +5,9 @@ import jinja2
 import jinja2.loaders
 from . import __version__
 
-import imp, inspect
+#import imp
+import importlib
+import inspect
 
 from .context import read_context_data, FORMATS
 from .extras import filters
@@ -70,7 +72,7 @@ class Jinja2TemplateRenderer(object):
         self.register_tests(self._import_functions(filename))
 
     def _import_functions(self, filename):
-        m = imp.load_source('imported-funcs', filename)
+        m = importlib.util.spec_from_file_location('imported-funcs', filename)
         return dict((name, func) for name, func in inspect.getmembers(m) if inspect.isfunction(func))
 
     def render(self, template_path, context):

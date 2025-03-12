@@ -1,0 +1,20 @@
+[project]
+name = "j2cli"
+version = "0.4.0"
+description = ""
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "jinja2>=3.1.6",
+]
+
+[dependency-groups]
+dev = [
+    "exdoc>=0.1.4.post1",
+    "nose>=1.3.7",
+    "wheel>=0.45.1",
+]
+
+[project.scripts]
+j2 = "j2cli.cli:main"
+j2cli = "j2cli.cli:main"

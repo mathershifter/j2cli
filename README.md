@@ -1,19 +1,3 @@
-[![Build Status](https://travis-ci.org/kolypto/j2cli.svg)](https://travis-ci.org/kolypto/j2cli)
-[![Pythons](https://img.shields.io/badge/python-2.6%20%7C%202.7%20%7C%203.4%E2%80%933.7%20%7C%20pypy-blue.svg)](.travis.yml)
-
-Project Closed
-===============
-
-This project is not maintained anymore.
-
-Here are some actively maintained forks:
-
-* <https://github.com/kpfleming/jinjanator>
-* <https://github.com/mattrobenolt/jinja2-cli>
-* <https://github.com/m000/jj2cli>
-
-<hr />
-
 j2cli - Jinja2 Command-Line Tool
 ================================
 
@@ -27,18 +11,6 @@ Features:
 * Allows the use of environment variables in templates! Hello [Docker](http://www.docker.com/) :)
 
 Inspired by [mattrobenolt/jinja2-cli](https://github.com/mattrobenolt/jinja2-cli)
-
-## Installation
-
-```
-pip install j2cli
-```
-
-To enable the YAML support with [pyyaml](http://pyyaml.org/):
-
-```
-pip install j2cli[yaml]
-```
 
 ## Tutorial
 
